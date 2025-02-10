@@ -1,0 +1,36 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package rollingdice;
+
+/**
+ *
+ * @author tanusri.mukala_stu.a
+ * 
+ */
+public class RollingDice {
+    
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Die die1, die2;
+        die1 = new Die();
+        die2 = new Die();
+        
+        //Die die3 = new Die();
+        die1.roll();
+        die2.roll();
+        System.out.println(die1+"  "+die2);
+        die1.setFaceValue(5);
+        die2.roll();
+        System.out.println(die1 +"  "+die2);
+        
+        
+    }
+    
+}
